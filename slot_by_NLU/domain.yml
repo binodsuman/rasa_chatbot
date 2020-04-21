@@ -1,0 +1,29 @@
+intents:
+  - greet
+  - name_entry
+  - country_entry
+
+slots:
+  name:
+    type: text
+  country:
+    type: text  
+
+entities:
+ - name
+ - country
+
+responses:
+  utter_greet:
+  - text: "Please enter your name?"
+
+  utter_enter_country:
+  - text: "Please entery your country name"
+
+  utter_show_name_country:
+  - text: "Your name is {name} and belongs to {country}"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  
